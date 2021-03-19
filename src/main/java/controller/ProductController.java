@@ -37,9 +37,7 @@ public class ProductController extends HttpServlet {
                 case "update":
                     showUpdateForm(request,response);
                     break;
-                case "search":
-                    searchProduct(request,response);
-                    break;
+
                 case "showAll":
                     showAllProduct(request,response);
                     break;
@@ -64,6 +62,9 @@ public class ProductController extends HttpServlet {
         }
         try {
             switch (action) {
+                case "search":
+                    searchProduct(request,response);
+                    break;
                 case "insert":
                     insertProduct(request,response);
                     break;

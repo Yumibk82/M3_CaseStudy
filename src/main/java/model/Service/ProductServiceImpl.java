@@ -167,9 +167,10 @@ public class ProductServiceImpl implements IProductService {
         try(
                 Connection connection=getConnection();
                 PreparedStatement preparedStatement=connection.prepareStatement(SORT_BY_NAME);){
-                Product product=new Product();
+
                 ResultSet rs=preparedStatement.executeQuery();
                 while (rs.next()){
+                    Product product=new Product();
                     int id=rs.getInt("productid");
                     String name=rs.getString("productName");
                     int quantity=rs.getInt("quantity");
