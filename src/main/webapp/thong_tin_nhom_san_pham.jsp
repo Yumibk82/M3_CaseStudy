@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: minhle
-  Date: 3/17/21
-  Time: 11:07
+  User: Tuan
+  Date: 3/17/2021
+  Time: 11:43 AM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="./trang-chu.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
-    <title>PRODUCT INFORMATION</title>
+    <title>PRODUCT CATEGORY INFORMATION</title>
 </head>
 <body>
 <div id="header">
@@ -313,72 +313,82 @@
     </div>
 </div>
 
-<div id="contents">
-    <div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-10">
+    <div id="headerInner">
 
     </div>
-    <div class="row">
-        <div class="col-md-1">
-
+    <div id="contents">
+        <div class="row">
+            <a href=""> <span style="margin-left: 20px;margin-top: 20px">TRANG CHỦ</span> </a>
+            <span> > </span>
+            <a href=""> <span>GIÀY DÉP</span> </a>
         </div>
-        <div class="col-md-6">
+        <div>
             <div class="row">
-                <div class="col-md-6">
-                    <img id="p1.1" src="/pictures/pic1.1.jpg"  style="width: 300px;height: 300px;border: palevioletred solid 1px;box-shadow: beige">
-                </div>
-                <div class="col-md-6">
-                    <img id="p1.2" src="/pictures/pic2.1.jpg" style="width: 300px;height: 300px;border: palevioletred solid 1px;box-shadow: beige">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <img id="p2.1" src="/pictures/pic1.2.jpg" style="width: 300px;height: 300px;border: palevioletred solid 1px;box-shadow: beige">
-                </div>
-                <div class="col-md-6">
-                    <img id="p2.2" src="/pictures/pic2.2.jpg" style="width: 300px;height: 300px;border: palevioletred solid 1px;box-shadow: beige">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card text-center">
-                <div class="card-header">
-                    THÔNG TIN SẢN PHẨM
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Giày thể thao adidas</h5>
-                    <p class="card-text">Mã sản phẩm: DX0051.</p>
-                    <p class="card-text">Giá 495,000đ</p>
-
-                    <a href="#" class="btn btn-primary">THÊM VÀO GIỎ HÀNG</a>
-                    <a href="#" class="btn btn-primary">MUA NGAY</a>
-                </div>
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <p> <span style="background: red"> <strong>Size: </strong> </span> </p>
-                    <div class="btn-group mr-2" role="group" aria-label="First group">
-                        <button type="button" class="btn btn-secondary" style="background: burlywood">35</button>
-                        <button type="button" class="btn btn-secondary" style="background: burlywood">36</button>
-                        <button type="button" class="btn btn-secondary" style="background: burlywood">37</button>
-                        <button type="button" class="btn btn-secondary" style="background: burlywood">38</button>
-                        <button type="button" class="btn btn-secondary" style="background: burlywood">39</button>
-                        <button type="button" class="btn btn-secondary" style="background: burlywood">40</button>
+                <div class="col-md-3">
+                    <img src="/pictures/BN0145.jpg" style="height: 300px;width: 300px">
+                    <div>
+                        <p>Sản phẩm 1</p>
+                        <p>Kiểu dáng trang nhã</p>
                     </div>
                 </div>
-
-                <div class="card-footer text-muted">
-                    <p>
-                        Giao hàng nhanh toàn quốc( ➥ Phí Ship theo từng khu vực)
-                        Tại Hà Nội: giao hàng từ 1-2h (chọn "giao hàng hỏa tốc" tại trang giỏ hàng)
-                        Đổi hàng trong 30 ngày
-                        Bảo hành sản phẩm trọn đời
-                    </p>
+                <div class="col-md-3">
+                    <img src="/pictures/BV0018.jpg" style="height: 300px;width: 300px">
+                    <div>
+                        <p>Sản phẩm 2</p>
+                        <p>Kiểu dáng thanh lịch</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="/pictures/DX0051.jpg" style="height: 300px;width: 300px">
+                    <div>
+                        <p>Sản phẩm 3</p>
+                        <p>xxxxxxzzzzz</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="/pictures/GN0028.jpg" style="height: 300px;width: 300px">
+                    <div>
+                        <p>Sản phẩm 3</p>
+                        <p>xxxxxxzzzzz</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-1">
-
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="/pictures/GN0029.jpg" style="height: 300px;width: 300px">
+                    <div>
+                        <p>Sản phẩm 3</p>
+                        <p>xxxxxxzzzzz</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="/pictures/M00015.jpg" style="height: 300px;width: 300px">
+                    <div>
+                        <p>Sản phẩm 3</p>
+                        <p>xxxxxxzzzzz</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="/pictures/SE0005.jpg" style="height: 300px;width: 300px">
+                    <div>
+                        <p>Sản phẩm 3</p>
+                        <p>xxxxxxzzzzz</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="/pictures/SN0132.jpg" style="height: 300px;width: 300px">
+                    <div>
+                        <p>Sản phẩm 3</p>
+                        <p>xxxxxxzzzzz</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<div class="col-md-1"></div>
 
 <div id="footer">
     <div class="row" style="background-color: #e0e3e6">
@@ -491,6 +501,5 @@
         </div>
     </div>
 </div>
-
 </body>
 </html>
