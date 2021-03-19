@@ -6,9 +6,9 @@ import model.Entity.User;
 import java.sql.*;
 
 public class UserServiceImpl implements IUserService {
-    private String jdbcURL = "jdbc:mysql://localhost:3306/HTMShoe?useSSL=false";
+    private String jdbcURL = "jdbc:mysql://localhost:3306/htmshoe1";
     private String jdbcUsername = "root";
-    private String jdbcPassword = "new_password";
+    private String jdbcPassword = "Tulinh0308@a";
 
     private static final String SELECT_PASSWORD_BY_USERNAME = "select password from USER where username = ?;";
     private static final String INSERT_NEW_USER = "INSERT INTO USER VALUES (?,?,?,?,?);";

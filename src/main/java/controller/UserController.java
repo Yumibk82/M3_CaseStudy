@@ -1,5 +1,6 @@
 package controller;
 
+
 import model.Entity.Cart;
 import model.Entity.User;
 import model.Service.UserServiceImpl;
@@ -10,7 +11,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet(name = "UserControlloer", urlPatterns = "/users")
+@WebServlet(name = "UserController", urlPatterns = "/users")
 public class UserController extends HttpServlet {
     private UserServiceImpl userService = new UserServiceImpl();
     @Override
@@ -26,8 +27,12 @@ public class UserController extends HttpServlet {
         }
         try {
             switch (action) {
-                case "login" -> loginUser(request, response);
-                case "signup" -> signupUser(request, response);
+                case "login":
+                    loginUser(request, response);
+                    break;
+                case "signup":
+                    signupUser(request, response);
+                    break;
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -53,7 +58,7 @@ public class UserController extends HttpServlet {
         String userLastName = request.getParameter("");
         String email = request.getParameter("");
         String address = request.getParameter("");
-        Cart newCart = new Cart();
+        Cart newCart = new Cart(1,2000,2000);
         User newUser = new User(userName, userPassword, userFirstName, userLastName, email, address, newCart.getCartId());
         userService.addNewUser(newUser);
         response.sendRedirect("/signup3.jsp");

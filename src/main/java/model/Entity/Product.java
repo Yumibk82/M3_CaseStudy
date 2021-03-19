@@ -1,43 +1,56 @@
 package model.Entity;
 
 public class Product {
-    private int productId;
-    private String productName;
-    private int productQuantity;
-    private double productPrice;
+    private int productid;
+    private String productname;
+    private int quantity;
+    private double price;
     private double discount;
-    private int categoryId;
+    private int categoryid;
 
-    public int getProductId() {
-        return productId;
+
+    public Product() {
     }
 
-    public void setProductId(int productId) {
-        this.productId = productId;
+    public Product(int productid, String productname, int quantity, double price, double discount, int categoryid) {
+        this.productid = productid;
+        this.productname = productname;
+        this.quantity = quantity;
+        this.price = price;
+        this.discount = discount;
+        this.categoryid = categoryid;
     }
 
-    public String getProductName() {
-        return productName;
+    public int getProductid() {
+        return productid;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
+    public void setProductid(int productid) {
+        this.productid = productid;
     }
 
-    public int getProductQuantity() {
-        return productQuantity;
+    public String getProductname() {
+        return productname;
     }
 
-    public void setProductQuantity(int productQuantity) {
-        this.productQuantity = productQuantity;
+    public void setProductname(String productname) {
+        this.productname = productname;
     }
 
-    public double getProductPrice() {
-        return productPrice;
+    public int getQuantity() {
+        return quantity;
     }
 
-    public void setProductPrice(double productPrice) {
-        this.productPrice = productPrice;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public double getDiscount() {
@@ -48,23 +61,11 @@ public class Product {
         this.discount = discount;
     }
 
-    public int getCategoryId() {
-        return categoryId;
+    public int getCategoryid() {
+        return categoryid;
     }
 
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    public Product(int productId, String productName, int productQuantity, double productPrice, double discount, int categoryId) {
-        this.productId = productId;
-        this.productName = productName;
-        this.productQuantity = productQuantity;
-        this.productPrice = productPrice;
-        this.discount = discount;
-        this.categoryId = categoryId;
-    }
-
-    public Product() {
+    public void setCategoryid(int categoryid) {
+        this.categoryid = categoryid;
     }
 }
